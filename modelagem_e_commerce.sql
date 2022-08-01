@@ -20,7 +20,7 @@ CREATE TABLE products (
 	id SERIAL NOT NULL PRIMARY KEY,
 	name TEXT NOT NULL,
 	"categoryId" INTEGER NOT NULL REFERENCES categories(id),
-	size VARCHAR(3) NOT NULL,
+	TYPE "size" NOT NULL,
 	price INTEGER NOT NULL,
 	"mainImage" TEXT NOT NULL,
 	"secondImage" TEXT,
